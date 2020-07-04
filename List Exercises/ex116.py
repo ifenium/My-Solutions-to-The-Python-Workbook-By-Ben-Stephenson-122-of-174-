@@ -12,31 +12,31 @@ For example, Science! should become Iencescay!.
 
 consonants = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z']
 vowels = ['a','e','i','o','u']
-punctuations = [',','.','?']
+punctuations = [',','.','?','!']
 
-line = input('Enter a sample text: ')
+line = input('Enter a sample text: ').lower()
 
-new = ''
+
 i = 0
 cond = False
-length = len(line)
 index = ''
+new = ''
+length = len(line)
 
-for i in line:
-    if i in punctuations:
-        index = line.index(i)
-    break
+for j in line:
+    if j in punctuations:
+        loc = line.index(j)
 
-
-punc = line[index]
-line.pop(index)
+punc = line[loc]
 
 if line[0] in vowels:
     new += line + 'way' + str(punc)
 else:
     while not cond:
+        line2 = line.replace(punc, '')
         if line[i] in consonants and line[i+1] in vowels:
             new += line[i+1:] + line[:i+1] + 'ay' + str(punc)
+            new = new.capitalize()
             cond = True 
         else:
             i += 1
