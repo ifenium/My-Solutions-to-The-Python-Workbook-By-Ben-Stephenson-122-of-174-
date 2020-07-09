@@ -1,6 +1,6 @@
-# My-Solutions-to-The-Python-Workbook-By-Ben-Stephenson
+# Solutions-to-The-Python-Workbook-By-Ben-Stephenson
 
-My Solutions to the 174 exercises in ' The Python Workbook' by Ben Stephenson with comment.
+My Solutions to 122 of 174 exercises in the book ' The Python Workbook' by Ben Stephenson.
 You can purchase the book from:
 
 https://www.springer.com/gp/book/9783319385617
